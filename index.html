@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <h1>Hello World!</h1>
+    <h3>
+      This proxy is designed to work with a number of different requests
+      utilizing the Fetch feature that is currently experimental in Node.js.
+      <br />
+      Below you will find features this proxy allows and how to use them:
+    </h3>
+    <ul>
+      <li>
+        <h3>Basic Usage:</h3>
+        <p>
+          Type in any URL in the box above or append it to this sites URL to
+          create a proxy-request. This will render any data a request to the URL
+          yielded on this site alongside sending it to any program that
+          requested it.
+        </p>
+        <h4>Using Custom Headers and Options:</h4>
+        <p>
+          To use headers alongside your request add a header to your request for
+          "use_headers" set to true as its value.
+          <br />
+          For custom request options add another header titled "custom_options"
+          with it's value set to a JSON of your custom HTTP options.
+          <br />
+          For an explanation and guide to Fetch's options you can check out
+          <a
+            href="https://developer.mozilla.org/docs/Web/API/Fetch_API/Using_Fetch"
+            >this reference guide</a
+          >.
+        </p>
+      </li>
+      <li>
+        <h3>Supported Request Types:</h3>
+        <ul>
+          <li>
+            <h4>Simple JSON Requests:</h4>
+            <p>
+              Making JSON requests is the main functionality of this program.
+              <br />
+              To make a request for a JSON simply append any request URL to this
+              sites address.
+            </p>
+          </li>
+          <li>
+            <h4>HTML and Text Requests:</h4>
+            <p>
+              To make a request for a site's text append the request to this
+              sites url prefaced by /text/.
+              <br />
+              Alongside the text, whatever styling is present on the site will
+              also be rendered unless that styling or content is JS-based.
+            </p>
+          </li>
+          <li>
+            <h4>Post Requests:</h4>
+            <p>
+              Like most request services you can also send data to addresses
+              using post requests.
+              <br />
+              To do this simply preface the url you are posting to with /post/
+              in this site's url and include any data you'd like to post in the
+              body of your request's headers.
+            </p>
+          </li>
+          <li>
+            <h4>Blob Requests:</h4>
+            <p>If you don't know what a blob is it's</p>
+          </li>
+          <li>
+            <h4>Clone Requests:</h4>
+            <p></p>
+          </li>
+          <li>
+            <h4>Form Data Requests:</h4>
+            <p></p>
+          </li>
+          <li>
+            <h4>Array Buffer Requests:</h4>
+            <p></p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
